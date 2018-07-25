@@ -49,23 +49,23 @@ function turnLeft(rover){
   console.log("turnLeft");
   switch (actualDirection){
     case "N":
-    newDirection = "W";
-    console.log("Head West");
+      newDirection = "W";
+      console.log("Head West");
     break;
     case "E":
-    newDirection = "N";
-    console.log("Head North");
+      newDirection = "N";
+      console.log("Head North");
     break;
     case "S":
-    newDirection = "E";
-    console.log("Head East");
+      newDirection = "E";
+      console.log("Head East");
     break;
     case "W":
-    newDirection = "S";
-    console.log("Head South");
+      newDirection = "S";
+      console.log("Head South");
     break;
     default:
-    console.log("Direction not identified");
+      console.log("Direction not identified");
     break;
   }
   console.log("Position (" + rover.x + "," + rover.y + ")");
@@ -79,23 +79,23 @@ function turnRight(rover){
   console.log("turnRight");
   switch (actualDirection){
     case "N":
-    newDirection = "E";
-    console.log("Head East");
+      newDirection = "E";
+      console.log("Head East");
     break;
     case "E":
-    newDirection = "S";
-    console.log("Head South");
+      newDirection = "S";
+      console.log("Head South");
     break;
     case "S":
-    newDirection = "W";
-    console.log("Head West");
+      newDirection = "W";
+      console.log("Head West");
     break;
     case "W":
-    newDirection = "N";
-    console.log("Head North");
+      newDirection = "N";
+      console.log("Head North");
     break;
     default:
-    console.log("Direction not identified");
+      console.log("Direction not identified");
     break;
   }
   console.log("Position (" + rover.x + "," + rover.y + ")");
@@ -191,19 +191,19 @@ function commandString(command){
   for(var i = 0; i < command.length; i++){
     switch(command[i]){
       case "r":
-      turnRight(rover);
+        turnRight(rover);
       break;
       case "l":
-      turnLeft(rover);
+        turnLeft(rover);
       break;
       case "f":
-      moveForward(rover);
+        moveForward(rover);
       break;
       case "b":
-      moveBackward(rover);
+        moveBackward(rover);
       break;
       default:
-      console.log("Command not recognized");
+        console.log("Command not recognized");
       break;
     }
     rover.travelLog.push(rover.x + "," + rover.y);
