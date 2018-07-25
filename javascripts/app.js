@@ -109,35 +109,35 @@ function moveForward(rover){
   console.log("moveForward");
   switch (actualDirection){
     case "N":
-    if (rover.y - 1 < 0){
-      console.log(borderError);
-    } else {
-      rover.y = rover.y - 1;
-    }
+      if (rover.y - 1 < 0){
+        console.log(borderError);
+      } else {
+        rover.y = rover.y - 1;
+      }
     break;
     case "E":
-    if (rover.x + 1 > 9){
-      console.log(borderError);
-    } else {
-      rover.x = rover.x + 1;
-    }
+      if (rover.x + 1 > 9){
+        console.log(borderError);
+      } else {
+        rover.x = rover.x + 1;
+      }
     break;
     case "S":
-    if (rover.y + 1 > 9){
-      console.log(borderError);
-    } else {
-      rover.y = rover.y + 1;
-    }    
+      if (rover.y + 1 > 9){
+        console.log(borderError);
+      } else {
+        rover.y = rover.y + 1;
+      }    
     break;
     case "W":
-    if (rover.x - 1 < 0){
-      console.log(borderError);
-    } else {
-      rover.x = rover.x - 1;
-    }
+      if (rover.x - 1 < 0){
+        console.log(borderError);
+      } else {
+        rover.x = rover.x - 1;
+      }
     break;
     default:
-    console.log("Direction not identified");
+      console.log("Direction not identified");
     break;
   }
   console.log("Position (" + rover.x + "," + rover.y + ")" );
@@ -151,32 +151,32 @@ function moveBackward(rover){
   console.log("moveBackward");
   switch (actualDirection){
     case "N":
-    if (rover.y + 1 > 9){
-      console.log(borderError);
-    } else {
-      rover.y = rover.y + 1;
-    }
+      if (rover.y + 1 > 9){
+        console.log(borderError);
+      } else {
+        rover.y = rover.y + 1;
+      }
     break;
     case "E":
-    if (rover.x - 1 < 0){
-      console.log(borderError);
-    } else {
-      rover.x = rover.x - 1;
-    }
+      if (rover.x - 1 < 0){
+        console.log(borderError);
+      } else {
+        rover.x = rover.x - 1;
+      }
     break;
     case "S":
-    if (rover.y - 1 < 0){
-      console.log(borderError);
-    } else {
-      rover.y = rover.y - 1;
-    }
+      if (rover.y - 1 < 0){
+        console.log(borderError);
+      } else {
+        rover.y = rover.y - 1;
+      }
     break;
     case "W":
-    if (rover.x + 1 > 9){
-      console.log(borderError);
-    } else {
-      rover.x = rover.x + 1;
-    }
+      if (rover.x + 1 > 9){
+        console.log(borderError);
+      } else {
+        rover.x = rover.x + 1;
+      }
     break;
     default:
     console.log("Direction not identified");
